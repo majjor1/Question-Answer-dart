@@ -1,4 +1,6 @@
-void main ()
+
+    
+  void main ()
 {
 print("Q1 : what are the various operater in dart ? Explain with example.");
   print("ANS");
@@ -19,13 +21,13 @@ print("Q1 : what are the various operater in dart ? Explain with example.");
   print(res);
   
   var f =   --a;
-  print("(1) ${a}");
+  print("(1) . The result of --a is : ${a}");
   var g =  --a - --b;
-  print("(2) ${g}");
+  print("(2) . The result of --a - --b is : ${g}");
   var h = --a - --b + ++b;
-  print("(3) ${h}");
+  print("(3) . The result of --a - --b + ++b is : ${h}");
   var i = --a - --b + ++b + b--;
-  print("(4) ${i}");
+  print("(4) . The result of --a - --b + ++b + b-- is : ${i}");
   
   print("Q3 : cost of 1 movie ticket is 600 PKR. write a script to store ticket price in a varible & calculate the cost of bying 5 ticket to a movie.");
   
@@ -39,6 +41,49 @@ print("Q1 : what are the various operater in dart ? Explain with example.");
   print("Ticket Quantity  :  ${ticket_quantity}");
   print("Total price      :  ${total_price}${cvalue}");
    
-  
-  
-}
+    
+    
+  print("Q7 : solve the first declare an array and assign the numbers of the table of 7 . k . Second declare another array and assign the number 1-10 l. now rite down the table of 7 using Map.fromIterables method.");
+    
+    
+  print("ANS");
+    
+    var j = [7 , 14 , 21 , 28 , 35 , 42 , 49 , 56 , 63 , 70];
+    var k = [1,2,3,4,5,6,7,8,9,10];
+    var l = Map.fromIterables(k,j);
+    print(l);
+    
+    
+    print("\nQ12 : write a program k electric bill in dart");
+    
+    print("Ans");
+   String customerName =  "Syed Abdul Sami";
+    print("Customer Name : ${customerName}");
+    String currentMonth = "September"; 
+    print("Currrent Month : ${currentMonth}");
+    var totalUnit = 300;
+    print("Total Unit : ${totalUnit}");
+    var perUnit = 10;
+    print("Total Unit : ${totalUnit}");
+    var date = 7;
+    var afterDueDateCharges = 106;
+    var dueDateAmount = totalUnit * perUnit;
+    var afterDueDateAmount = (totalUnit * perUnit) +afterDueDateCharges;
+    if(date > 5){
+    print("After Due Date ${afterDueDateAmount}");      
+    }
+  else if (date <= 6 || date > 0){
+    print("Due Date ${dueDateAmount}");    
+  }else{
+    print("Eror");
+  }
+    print("\nQ5 : what is a different between these oprators ?? and ? ");
+  var m ;
+    var n = 45;
+    var o = 23;
+    var p = 78;
+    var q = m ?? n;
+    print(q);
+    var r = n > p;
+  print(r);
+  }
